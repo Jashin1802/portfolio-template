@@ -114,13 +114,14 @@ a {
 /* ===== ABOUT ===== */
 .about__content {
   display: flex;
-  gap: 6rem;
+  gap: 8rem;                 /* increased spacing */
   align-items: center;
 }
 
 .about__content img {
-  width: 260px;
-  border-radius: 1.2rem;
+  width: 300px;              /* clean, professional size */
+  border-radius: 1.2rem;     /* subtle rounding */
+  box-shadow: 0 18px 40px rgba(0,0,0,.45); /* depth */
 }
 
 /* ===== SKILLS ===== */
@@ -188,9 +189,15 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
+
   .about__content,
   .project {
     flex-direction: column;
+  }
+
+  .about__content img {
+    margin: 0 auto;          /* center image on mobile */
+    width: 260px;            /* slightly smaller for phones */
   }
 
   .skills__grid {
