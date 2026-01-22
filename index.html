@@ -1,113 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="images/71663219-geometric-letter-j-icon-and-logo-template.png" />
-  
+
+  <link rel="shortcut icon" type="image/png" href="./images/71663219-geometric-letter-j-icon-and-logo-template.png" />
+
   <title>Jashin Sewpersad | Computer Engineer</title>
-  
-  <meta name="description" content="Final-year Computer Engineering student at University of KwaZulu-Natal, with a passion for Software Development, Network Security and AI." />
-  <meta name="keywords" content="Jashin, C++, Java, Python, Computer Engineering, Networks Security, AI." />
+
+  <meta
+    name="description"
+    content="Final-year Computer Engineering student at the University of KwaZulu-Natal, with interests in Software Development, Network Security, and AI."
+  />
+  <meta
+    name="keywords"
+    content="Jashin Sewpersad, Computer Engineering, C++, Java, Python, Networks, Security, AI"
+  />
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-  <!-- ***** Hero Section ***** -->
+  <!-- ***** Header ***** -->
+  <header class="header" id="top">
+    <div class="row">
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <header class="hero">
-    <div class="hero__overlay">
-      <h1>Jashin Sewpersad</h1>
-      <p>Final-year Computer Engineering student with a passion for Software Development, Network Security, and AI.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Jashin Sewpersad</span>
+        </h1>
+        <p>
+          Final-year Computer Engineering student at the University of
+          KwaZulu-Natal with a strong interest in software development,
+          network security, and artificial intelligence.
+        </p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
     </div>
   </header>
 
-  <main role="main">
+  <main>
 
     <!-- ***** Work ***** -->
-
     <section class="work" id="work">
-      <h2>My Work</h2>
-      <div class="work__cards">
-        <div class="card">
-          <img src="./images/project-1.png" alt="Portfolio Template">
-          <h3>Portfolio Template</h3>
-          <p>A free Open Source Portfolio for anyone to use.</p>
-          <a href="https://nisar.surge.sh" target="_blank" class="btn">View Project</a>
+      <div class="row">
+        <h2>Projects</h2>
+
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Portfolio Website</h3>
+            <p>
+              A responsive personal portfolio built to showcase my projects,
+              technical skills, and academic background.
+            </p>
+            <ul class="work__list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="work__links">
+              <a href="#" class="link__text">
+                View Project <span>&rarr;</span>
+              </a>
+              <a href="#" title="View Source Code">
+                <img src="./images/github.svg" class="work__code" alt="GitHub" />
+              </a>
+            </div>
+          </div>
+
+          <div class="work__image-box">
+            <img src="./images/project-1.png" class="work__image" alt="Portfolio project" />
+          </div>
         </div>
-        <div class="card">
-          <img src="./images/project-2.png" alt="Calculator">
-          <h3>Calculator</h3>
-          <p>A simple calculator built with React and Node.js.</p>
-          <a href="#" class="btn">View Project</a>
+
+        <div class="work__box">
+          <div class="work__text">
+            <h3>Academic Engineering Projects</h3>
+            <p>
+              A collection of university projects involving algorithms,
+              digital communications, encryption, and embedded systems.
+            </p>
+            <ul class="work__list">
+              <li>C++</li>
+              <li>Python</li>
+              <li>MATLAB</li>
+            </ul>
+
+            <div class="work__links">
+              <a href="#" class="link__text">
+                View Work <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="work__image-box">
+            <img src="./images/project-2.png" class="work__image" alt="Engineering work" />
+          </div>
         </div>
-        <div class="card">
-          <img src="./images/project-3.png" alt="Notificator">
-          <h3>Notificator</h3>
-          <p>A notification app built with React and Next.js.</p>
-          <a href="#" class="btn">View Project</a>
-        </div>
+
       </div>
     </section>
 
     <!-- ***** About ***** -->
-
     <section class="about" id="about">
-      <h2>About Me</h2>
-      <div class="about__content">
-        <div class="about__text">
-          <p>
-            I am a passionate Computer Engineering student with a keen interest in software development and AI. I enjoy solving complex problems and creating efficient solutions.
-          </p>
-          <a href="#" class="btn">My Resume</a>
-        </div>
-        <div class="about__photo-container">
-          <img class="about__photo" src="C:\Users\USER\Downloads\WhatsApp Image 2026-01-21 at 14.46.27.jpeg" alt="Jashin Sewpersad" />
+      <div class="row">
+        <h2>About Me</h2>
+
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I am a final-year Computer Engineering student with a strong
+              foundation in algorithms, software development, and digital
+              systems. I enjoy building efficient, well-structured solutions
+              and continuously expanding my technical skill set.
+            </p>
+
+            <p>
+              My interests include backend development, cybersecurity, and
+              applied artificial intelligence.
+            </p>
+
+            <a href="./documents/Jashin_Sewpersad_CV.pdf" class="btn">
+              View Resume
+            </a>
+          </div>
+
+          <div class="about__photo-container">
+            <img
+              src="./images/profile.jpg"
+              class="about__photo"
+              alt="Jashin Sewpersad"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ***** Contact ***** -->
-
     <section class="contact" id="contact">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Looking for a fast-performing and user-friendly website? Feel free to reach out via email!
-        </p>
-        <a href="mailto:jsewpersad1@gmail.com" class="btn">jsewpersad1@gmail.com</a>
+      <div class="row">
+        <h2>Get in Touch</h2>
+
+        <div class="contact__info">
+          <p>
+            If you'd like to discuss opportunities, projects, or collaborations,
+            feel free to reach out. Email is the best way to contact me.
+          </p>
+
+          <a href="mailto:jsewpersad1@gmail.com" class="btn">
+            jsewpersad1@gmail.com
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
   <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
+  <footer class="footer">
     <div class="row">
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          <a href="https://github.com/yourusername" title="GitHub">
+            <img src="./images/github.svg" class="footer__social-image" alt="GitHub" />
           </a>
         </li>
+
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/" title="Link to LinkedIn Profile">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+          <a href="https://linkedin.com/in/yourusername" title="LinkedIn">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn" />
           </a>
         </li>
       </ul>
-      <p>&copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.</p>
+
+      <p>&copy; 2026 Jashin Sewpersad</p>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
+
   <script src="./index.js"></script>
 </body>
-
 </html>
