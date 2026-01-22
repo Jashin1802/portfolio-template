@@ -39,7 +39,6 @@
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
-
     --container-max-width: 1180px;
     --container-normal-width: 800px;
     --container-medium-width: 700px; 
@@ -440,6 +439,13 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Work ----- */
 /* --------------------------------------- */
 
+.work__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
 .work__box {
     display: flex;
     align-items: center;
@@ -472,7 +478,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
