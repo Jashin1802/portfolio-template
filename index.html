@@ -3,136 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Jashin Sewpersad | Computer Engineering Student</title>
 
-  <meta name="description" content="Final-year Computer Engineering student seeking graduate and internship roles in software engineering, cybersecurity, and intelligent systems." />
+  <meta name="description" content="Final-year Computer Engineering student seeking graduate and internship opportunities in software engineering, cybersecurity, and intelligent systems." />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/71663219-geometric-letter-j-icon-and-logo-template.png">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
+<header class="header" id="top">
+
   <!-- NAVBAR -->
-  <div class="nav-row">
+  <div class="row nav-row">
     <nav class="nav">
-      <ul>
+      <ul class="nav__items">
         <li><a href="#about" class="active">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
   </div>
 
-  <!-- HEADER -->
-  <header class="header" id="top">
-    <div class="header-content">
-      <h1>Jashin Sewpersad</h1>
-      <p>
-        Final-year Computer Engineering student actively seeking
-        <strong>graduate</strong> and <strong>internship</strong> roles in
-        software engineering, cybersecurity, and intelligent systems.
-      </p>
-      <a href="#contact" class="btn">Get in touch</a>
-    </div>
-  </header>
+  <!-- HERO CONTENT -->
+  <div class="row header__content">
+    <h1>Jashin Sewpersad</h1>
+    <p class="header__subtitle">
+      Final-year Computer Engineering student actively seeking
+      <strong>graduate</strong> and <strong>internship</strong> roles in
+      software engineering, cybersecurity, and intelligent systems.
+    </p>
+    <a href="#contact" class="btn btn--primary">Get in touch</a>
+  </div>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about-grid">
+</header>
+
+<main>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="row">
+    <h2>About Me</h2>
+
+    <div class="about__content">
       <div>
-        <h2>About Me</h2>
         <p>
           I am a final-year Computer Engineering student at the University of
           KwaZulu-Natal with a strong foundation in algorithms, software
-          engineering, digital systems, and cybersecurity.
+          engineering, and digital systems.
         </p>
         <p>
-          I enjoy building efficient, secure systems and solving complex
-          technical problems with clean, maintainable solutions.
+          I enjoy solving technical problems, writing clean and maintainable
+          code, and understanding systems end-to-end — from low-level logic to
+          high-level architecture.
         </p>
+        <p>
+          I am currently seeking opportunities where I can contribute,
+          learn from experienced engineers, and grow into a high-impact
+          software professional.
+        </p>
+
+        <a href="./documents/Jashin_Sewpersad_CV.pdf" class="btn">
+          View Resume
+        </a>
       </div>
 
-      <!-- Image placeholder -->
-      <div class="about-image">
-        <img src="images/profile.jpg" alt="Profile image">
+      <img src="images/Profilefoto.jpeg" alt="Jashin Sewpersad" />
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="row">
+    <h2>Technical Skills</h2>
+
+    <div class="skills__grid">
+
+      <div class="skill" data-level="85">
+        <span>C++</span>
+        <div class="bar"><div></div></div>
       </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill">
-          <span>Python</span>
-          <div class="bar"><div style="width: 85%"></div></div>
-        </div>
-
-        <div class="skill">
-          <span>C / C++</span>
-          <div class="bar"><div style="width: 80%"></div></div>
-        </div>
-
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="bar"><div style="width: 70%"></div></div>
-        </div>
-
-        <div class="skill">
-          <span>Cybersecurity</span>
-          <div class="bar"><div style="width: 75%"></div></div>
-        </div>
+      <div class="skill" data-level="80">
+        <span>Python</span>
+        <div class="bar"><div></div></div>
       </div>
+
+      <div class="skill" data-level="75">
+        <span>Java</span>
+        <div class="bar"><div></div></div>
+      </div>
+
+      <div class="skill" data-level="70">
+        <span>MATLAB</span>
+        <div class="bar"><div></div></div>
+      </div>
+
+      <div class="skill" data-level="85">
+        <span>HTML / CSS</span>
+        <div class="bar"><div></div></div>
+      </div>
+
+      <div class="skill" data-level="65">
+        <span>JavaScript</span>
+        <div class="bar"><div></div></div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <p>Selected academic and personal projects will be listed here.</p>
+<!-- ===== PROJECTS ===== -->
+<section id="work">
+  <div class="row">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Designed and implemented a responsive portfolio website to present
+          technical skills, academic projects, and professional goals.
+        </p>
+        <ul>
+          <li>HTML5 & semantic structure</li>
+          <li>Modern CSS layout & responsiveness</li>
+          <li>JavaScript for UI behaviour</li>
+        </ul>
+      </div>
+
+      <img src="./images/project-1.png" alt="Portfolio project screenshot" />
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: your@email.com</p>
-      <p>LinkedIn | GitHub</p>
+    <div class="project">
+      <div>
+        <h3>Academic Engineering Projects</h3>
+        <p>
+          Completed multiple university projects involving algorithms,
+          digital communications, encryption, and embedded systems.
+        </p>
+        <ul>
+          <li>Algorithm design & analysis</li>
+          <li>Security & cryptography fundamentals</li>
+          <li>Signal processing & systems modelling</li>
+        </ul>
+      </div>
+
+      <img src="./images/project-2.png" alt="Engineering projects" />
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ACTIVE NAV SCRIPT -->
-  <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav a");
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="row">
+    <h2>Contact</h2>
+    <p>
+      If you’re a recruiter or engineer interested in discussing opportunities,
+      I’d be happy to connect.
+    </p>
+    <a href="mailto:jsewpersad1@gmail.com" class="btn btn--primary">
+      jsewpersad1@gmail.com
+    </a>
+  </div>
+</section>
 
-    window.addEventListener("scroll", () => {
-      let current = "";
+</main>
 
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        if (scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
+<footer>
+  <p>&copy; 2026 Jashin Sewpersad</p>
+</footer>
 
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
+<a href="#top" class="back-to-top">↑</a>
+
+<script>
+  /* ===== Theme toggle ===== */
+  const toggle = document.querySelector('.theme-toggle');
+  const root = document.documentElement;
+
+  if (localStorage.getItem('theme') === 'light') {
+    root.classList.add('light');
+  }
+
+  toggle.addEventListener('click', () => {
+    root.classList.toggle('light');
+    localStorage.setItem(
+      'theme',
+      root.classList.contains('light') ? 'light' : 'dark'
+    );
+  });
+
+  /* ===== Skill animation ===== */
+  const skills = document.querySelectorAll('.skill');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const level = entry.target.dataset.level;
+        entry.target.querySelector('.bar div').style.width = level + '%';
+      }
     });
-  </script>
+  }, { threshold: 0.4 });
+
+  skills.forEach(skill => observer.observe(skill));
+
+  /* ===== Active nav highlighting ===== */
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 140;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
