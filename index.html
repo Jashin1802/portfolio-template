@@ -3,225 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Jashin Sewpersad | Computer Engineering Student</title>
-  <meta name="description" content="Final-year Computer Engineering student seeking graduate and internship opportunities in software engineering, cybersecurity, and intelligent systems." />
 
-  <link rel="icon" type="image/png" href="images/71663219-geometric-letter-j-icon-and-logo-template.png">
+  <meta name="description" content="Final-year Computer Engineering student seeking graduate and internship roles in software engineering, cybersecurity, and intelligent systems." />
+
+  <link rel="icon" type="image/png" href="images/j-icon.png" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
   <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
 
-<header class="header" id="top">
-
-  <!-- NAV -->
-  <div class="nav-row">
-    <nav class="nav">
-      <ul class="nav__items">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
-  </div>
-
-  <!-- HERO -->
-  <div class="row hero">
-    <div class="hero__text">
-      <h1>Jashin Sewpersad</h1>
-      <p class="header__subtitle">
-        Final-year Computer Engineering student seeking
-        <strong>graduate</strong> and <strong>internship</strong> roles in
-        software engineering, cybersecurity, and intelligent systems.
-      </p>
-      <a href="#contact" class="btn btn--primary">Get in touch</a>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
 
-    <div class="hero__image">
-      <img src="images/Profilefoto.jpeg" alt="Jashin Sewpersad">
-    </div>
-  </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
 
+    <div class="nav-icons">
+      <a href="https://github.com/YOURUSERNAME" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
 </header>
 
-<main>
+<!-- ================= HERO ================= -->
+<section id="about" class="hero section reveal">
+  <div class="hero-content">
 
-<section id="about">
-  <div class="row about--centered">
-    <h2>About Me</h2>
-
-    <p>
-      I am a final-year Computer Engineering student at the University of
-      KwaZulu-Natal with a strong foundation in algorithms, software
-      engineering, and digital systems.
-    </p>
-
-    <p>
-      I enjoy solving technical problems, writing clean and maintainable
-      code, and understanding systems end-to-end — from low-level logic
-      to high-level architecture.
-    </p>
-
-    <p>
-      I am currently seeking opportunities where I can contribute,
-      learn from experienced engineers, and grow into a high-impact
-      software professional.
-    </p>
-
-    <a href="./documents/Jashin_Sewpersad_CV.pdf" class="btn">
-      View Resume
-    </a>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="row">
-    <h2>Technical Skills</h2>
-
-    <div class="skills__grid">
-
-      <div class="skill" data-level="85">
-        <span>C++ <em>85%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-      <div class="skill" data-level="80">
-        <span>Python <em>80%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-      <div class="skill" data-level="75">
-        <span>Java <em>75%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-      <div class="skill" data-level="70">
-        <span>MATLAB <em>70%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-      <div class="skill" data-level="85">
-        <span>HTML / CSS <em>85%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-      <div class="skill" data-level="65">
-        <span>JavaScript <em>65%</em></span>
-        <div class="bar"><div></div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="row">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <div>
-        <h3>Personal Portfolio Website</h3>
-        <p>Responsive portfolio designed for recruiters and graduate roles.</p>
-        <ul>
-          <li>Semantic HTML & accessibility</li>
-          <li>Modern CSS & responsive layouts</li>
-          <li>JavaScript UI logic</li>
-        </ul>
-      </div>
-      <img src="images/project-1.png" alt="Portfolio project">
+    <div class="hero-text">
+      <h1>Jashin Sewpersad</h1>
+      <p>
+        Final-year <strong>Computer Engineering</strong> student seeking
+        <strong>graduate and internship</strong> roles in software engineering,
+        cybersecurity, and intelligent systems.
+      </p>
+      <a href="#contact" class="btn primary-btn">Get in touch</a>
     </div>
 
-    <div class="project">
-      <div>
-        <h3>Academic Engineering Projects</h3>
-        <p>University projects across algorithms, security, and systems.</p>
-        <ul>
-          <li>Algorithm design & analysis</li>
-          <li>Cryptography fundamentals</li>
-          <li>Digital systems & modelling</li>
-        </ul>
-      </div>
-      <img src="images/project-2.png" alt="Engineering projects">
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Jashin Sewpersad">
     </div>
 
   </div>
 </section>
 
-<section id="contact">
-  <div class="row contact--centered">
-    <h2>Contact</h2>
-    <p>If you'd like to discuss opportunities, feel free to reach out.</p>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section reveal">
+  <h2>Skills</h2>
 
-    <a href="mailto:jsewpersad1@gmail.com" class="btn btn--primary">
-      jsewpersad1@gmail.com
-    </a>
+  <div class="skills-container">
+
+    <div class="skill">
+      <span>Python</span>
+      <span class="percent">85%</span>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:85%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>C / Embedded Systems</span>
+      <span class="percent">75%</span>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:75%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>HTML / CSS</span>
+      <span class="percent">80%</span>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:80%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Cybersecurity</span>
+      <span class="percent">70%</span>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%"></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-</main>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
 
-<footer>
-  <p>&copy; 2026 Jashin Sewpersad</p>
-</footer>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Gender Classification System</h3>
+      <p>Image processing using LDP features and K-means clustering.</p>
+    </div>
 
-<a href="#top" class="back-to-top">↑</a>
+    <div class="project-card">
+      <h3>MD5 Hashing Implementation</h3>
+      <p>Custom Python implementation of the MD5 algorithm.</p>
+    </div>
+  </div>
+</section>
 
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact-section reveal">
+  <h2>Contact</h2>
+  <p>Let’s connect — I’m open to graduate and internship opportunities.</p>
+
+  <a href="mailto:your.email@example.com" class="btn outline-btn">
+    Contact Me
+  </a>
+</section>
+
+<!-- ================= SCRIPT ================= -->
 <script>
-/* ===== THEME TOGGLE ===== */
-const toggle = document.querySelector('.theme-toggle');
-const root = document.documentElement;
+  /* Dark / Light mode */
+  const toggleBtn = document.getElementById("theme-toggle");
+  const html = document.documentElement;
 
-if (localStorage.getItem('theme') === 'light') {
-  root.classList.add('light');
-}
+  toggleBtn.onclick = () => {
+    html.classList.toggle("dark");
+    html.classList.toggle("light");
+    toggleBtn.textContent = html.classList.contains("dark") ? "🌙" : "☀️";
+  };
 
-toggle.addEventListener('click', () => {
-  root.classList.toggle('light');
-  localStorage.setItem(
-    'theme',
-    root.classList.contains('light') ? 'light' : 'dark'
-  );
-});
+  /* Active nav highlighting */
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-/* ===== SKILL BAR ANIMATION ===== */
-const skills = document.querySelectorAll('.skill');
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      if (scrollY >= section.offsetTop - 150) {
+        current = section.id;
+      }
+    });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const level = entry.target.dataset.level;
-      entry.target.querySelector('.bar div').style.width = level + '%';
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.4 });
-
-skills.forEach(skill => observer.observe(skill));
-
-/* ===== ACTIVE NAV ===== */
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(section => {
-    if (scrollY >= section.offsetTop - 150) {
-      current = section.id;
-    }
+    navLinks.forEach(link => {
+      link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+    });
   });
 
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-});
+  /* Scroll animations */
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("active"));
+  }, { threshold: 0.15 });
+
+  reveals.forEach(r => observer.observe(r));
+
+  /* Mobile menu */
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-links");
+
+  hamburger.onclick = () => navMenu.classList.toggle("open");
 </script>
 
 </body>
