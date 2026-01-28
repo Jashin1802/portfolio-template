@@ -7,6 +7,7 @@
 
   <meta name="description" content="Final-year Computer Engineering student seeking graduate and internship roles in software engineering, cybersecurity, and intelligent systems." />
 
+  <!-- Favicon (browser icon) -->
   <link rel="icon" type="image/png" href="images/j-icon.png" />
 
   <!-- Icons -->
@@ -14,42 +15,58 @@
 
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <nav>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+  <nav class="nav">
 
-    <ul class="nav-links" id="nav-links">
+    <!-- Left side (optional placeholder / keeps center aligned nicely) -->
+    <div class="nav__left"></div>
+
+    <!-- Center menu -->
+    <ul class="nav__links" id="nav-links">
       <li><a href="#about" class="nav-link active">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
 
-    <div class="nav-icons">
-      <a href="https://github.com/YOURUSERNAME" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <button id="theme-toggle">🌙</button>
+    <!-- Right side icons -->
+    <div class="nav__right">
+      <a class="nav__icon" href="https://github.com/YOURUSERNAME" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a class="nav__icon" href="https://linkedin.com/in/YOURUSERNAME" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+
   </nav>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HERO / ABOUT ================= -->
 <section id="about" class="hero section reveal">
   <div class="hero-content">
 
     <div class="hero-text">
       <h1>Jashin Sewpersad</h1>
-      <p>
+      <p class="hero-subtitle">
         Final-year <strong>Computer Engineering</strong> student seeking
         <strong>graduate and internship</strong> roles in software engineering,
         cybersecurity, and intelligent systems.
       </p>
-      <a href="#contact" class="btn primary-btn">Get in touch</a>
+
+      <a href="#contact" class="btn outline-btn">Get in touch</a>
     </div>
 
     <div class="hero-image">
@@ -66,34 +83,42 @@
   <div class="skills-container">
 
     <div class="skill">
-      <span>Python</span>
-      <span class="percent">85%</span>
+      <div class="skill-top">
+        <span>Python</span>
+        <span class="percent">85%</span>
+      </div>
       <div class="skill-bar">
         <div class="skill-fill" style="width:85%"></div>
       </div>
     </div>
 
     <div class="skill">
-      <span>C / Embedded Systems</span>
-      <span class="percent">75%</span>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:75%"></div>
+      <div class="skill-top">
+        <span>C / C++</span>
+        <span class="percent">80%</span>
       </div>
-    </div>
-
-    <div class="skill">
-      <span>HTML / CSS</span>
-      <span class="percent">80%</span>
       <div class="skill-bar">
         <div class="skill-fill" style="width:80%"></div>
       </div>
     </div>
 
     <div class="skill">
-      <span>Cybersecurity</span>
-      <span class="percent">70%</span>
+      <div class="skill-top">
+        <span>JavaScript</span>
+        <span class="percent">70%</span>
+      </div>
       <div class="skill-bar">
         <div class="skill-fill" style="width:70%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-top">
+        <span>Cybersecurity</span>
+        <span class="percent">75%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:75%"></div>
       </div>
     </div>
 
@@ -120,55 +145,83 @@
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="section contact-section reveal">
   <h2>Contact</h2>
-  <p>Let’s connect — I’m open to graduate and internship opportunities.</p>
+  <p class="contact-text">
+    If you're a recruiter or engineer interested in discussing opportunities,
+    I’d be happy to connect.
+  </p>
 
   <a href="mailto:your.email@example.com" class="btn outline-btn">
     Contact Me
   </a>
+
+  <div class="contact-icons">
+    <a href="https://github.com/YOURUSERNAME" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
 </section>
 
 <!-- ================= SCRIPT ================= -->
 <script>
-  /* Dark / Light mode */
+  /* ================= THEME TOGGLE ================= */
   const toggleBtn = document.getElementById("theme-toggle");
   const html = document.documentElement;
 
-  toggleBtn.onclick = () => {
+  toggleBtn.addEventListener("click", () => {
     html.classList.toggle("dark");
     html.classList.toggle("light");
     toggleBtn.textContent = html.classList.contains("dark") ? "🌙" : "☀️";
-  };
+  });
 
-  /* Active nav highlighting */
+  /* ================= ACTIVE NAV HIGHLIGHT ================= */
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
 
-  window.addEventListener("scroll", () => {
+  function setActiveLink() {
     let current = "";
+
     sections.forEach(section => {
-      if (scrollY >= section.offsetTop - 150) {
+      const sectionTop = section.offsetTop - 200;
+      if (window.scrollY >= sectionTop) {
         current = section.id;
       }
     });
 
     navLinks.forEach(link => {
-      link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
     });
-  });
+  }
 
-  /* Scroll animations */
+  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("load", setActiveLink);
+
+  /* ================= SCROLL REVEAL ================= */
   const reveals = document.querySelectorAll(".reveal");
+
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("active"));
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("active");
+    });
   }, { threshold: 0.15 });
 
   reveals.forEach(r => observer.observe(r));
 
-  /* Mobile menu */
+  /* ================= MOBILE MENU ================= */
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-links");
 
-  hamburger.onclick = () => navMenu.classList.toggle("open");
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
+  // Close mobile menu when clicking a link
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+    });
+  });
 </script>
 
 </body>
