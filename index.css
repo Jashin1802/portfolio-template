@@ -182,11 +182,6 @@ html.light .hero-subtitle {
   color: var(--muted-light);
 }
 
-.hero-image img {
-  width: 260px;
-  border-radius: 18px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-}
 .hero-image {
   display: flex;
   justify-content: center;
@@ -198,10 +193,10 @@ html.light .hero-subtitle {
   height: 260px;
   object-fit: cover;
   border-radius: 18px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--primary);
   display: block;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
-
 
 /* ================= HEADINGS ================= */
 h2 {
@@ -229,6 +224,48 @@ h2 {
 .outline-btn:hover {
   background: var(--primary);
   color: #000;
+}
+
+/* ================= EXPERIENCE ================= */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.experience-card {
+  background: var(--card-dark);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+html.light .experience-card {
+  background: var(--card-light);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.experience-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.experience-meta {
+  color: var(--muted-dark);
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+html.light .experience-meta {
+  color: var(--muted-light);
+}
+
+.experience-card ul {
+  padding-left: 18px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
 }
 
 /* ================= SKILLS ================= */
@@ -327,6 +364,11 @@ html.light .contact-text {
   color: var(--primary);
 }
 
+/* ================= DOWNLOAD CV SECTION ================= */
+.cv-download-section {
+  text-align: center;
+}
+
 /* ================= REVEAL ANIMATION ================= */
 .reveal {
   opacity: 0;
@@ -385,5 +427,9 @@ html.light .contact-text {
 
   .skills-container {
     max-width: 100%;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
   }
 }
