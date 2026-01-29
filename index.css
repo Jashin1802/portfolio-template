@@ -433,3 +433,11 @@ html.light .contact-text {
     grid-template-columns: 1fr;
   }
 }
+/* ================= CONTACT BUTTONS ROW ================= */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
