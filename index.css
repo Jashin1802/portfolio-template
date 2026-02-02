@@ -468,3 +468,16 @@ html.light .contact-text {
     max-width: 100%;
   }
 }
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 40px 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--muted-dark);
+  background: transparent;
+}
+
+html.light .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--muted-light);
+}
